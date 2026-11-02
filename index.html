@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#faf7f0">
+  <title>MOMO KITCHEN | QR 메뉴</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="모모키친 홈">
+      <span class="brand-mark">m</span><span>MOMO KITCHEN</span>
+    </a>
+    <a class="header-call" href="tel:0551234567">전화 문의 <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">FRESH · DAILY · HOMEMADE</p>
+        <h1>좋은 재료로,<br><em>더 맛있는 하루</em></h1>
+        <p class="hero-description">모모키친과 함께하는 맛있는 식사 시간.<br>정성껏 준비한 오늘의 메뉴를 만나보세요.</p>
+        <div class="hero-meta">
+          <span><i class="status-dot"></i> 영업 중</span>
+          <span>매일 11:00 – 21:00</span>
+          <span>라스트오더 20:30</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/momo-design-reference.jpg" alt="모모키친 QR 메뉴판 디자인 참고 이미지">
+        <div class="hero-sticker">GOOD FOOD<br><b>GOOD DAY</b></div>
+      </div>
+    </section>
+
+    <section class="menu-section section-wrap" id="menu">
+      <div class="section-heading">
+        <div><p class="eyebrow">OUR MENU</p><h2>오늘의 메뉴</h2><p class="section-sub">사진과 함께 메뉴를 천천히 골라보세요.</p></div>
+        <span class="menu-count">MENU <b>04</b></span>
+      </div>
+
+      <nav class="category-tabs" aria-label="메뉴 카테고리">
+        <button class="category-tab active" data-category="전체">전체</button>
+        <button class="category-tab" data-category="파스타">파스타</button>
+        <button class="category-tab" data-category="리조또">리조또</button>
+        <button class="category-tab" data-category="피자">피자</button>
+        <button class="category-tab" data-category="샐러드">샐러드</button>
+      </nav>
+
+      <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="store-section section-wrap" id="store">
+      <div class="store-photo">
+        <img src="assets/momo-design-reference.jpg" alt="모모키친 매장 분위기">
+        <span>WELCOME TO MOMO</span>
+      </div>
+      <div class="store-info">
+        <p class="eyebrow">VISIT OUR STORE</p>
+        <h2>좋은 재료, 정직한 요리<br>모모키친입니다.</h2>
+        <p class="store-desc">신선한 재료로 정성스럽게 만든 맛있는 음식을 통해 일상의 작은 행복을 전하고 싶습니다.</p>
+        <div class="info-list">
+          <div class="info-row"><span class="info-icon">◷</span><div><b>영업시간</b><p>매일 11:00 – 21:00<br><small>(라스트오더 20:30)</small></p></div></div>
+          <div class="info-row"><span class="info-icon">☎</span><div><b>전화문의</b><p>055-123-4567</p></div></div>
+          <div class="info-row"><span class="info-icon">⌖</span><div><b>오시는 길</b><p>경남 진주시 진주대로 123 모모키친<br><small>주차 가능 · 포장 가능</small></p></div></div>
+        </div>
+        <a class="map-button" href="https://www.google.com/maps/search/?api=1&query=MOMO+KITCHEN+Jinju" target="_blank" rel="noopener">지도앱으로 연결 <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">m</span><span>MOMO KITCHEN</span></a>
+    <p>좋은 재료로, 더 맛있는 하루</p>
+    <small>본 페이지는 QR 메뉴판 웹사이트 실습 예제입니다. 메뉴·가격·주소·전화번호는 예시입니다.</small>
+  </footer>
+
+  <!-- 주문하기 버튼을 눌렀을 때 표시되는 주문 안내 팝업 -->
+  <div class="modal-backdrop" id="orderModal" aria-hidden="true">
+    <section class="order-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="팝업 닫기">×</button>
+      <p class="eyebrow">ORDER GUIDE</p>
+      <h2 id="modalTitle">주문 안내</h2>
+      <p class="modal-lead">선택하신 메뉴는 직원에게 말씀해 주세요.</p>
+      <div class="order-summary" id="orderSummary"></div>
+      <div class="modal-notice">현재는 수업용 예제 페이지입니다.<br>실제 온라인 결제 및 주문 접수 기능은 연결되어 있지 않습니다.</div>
+      <a class="modal-call" href="tel:0551234567">전화로 주문 문의하기</a>
+    </section>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
